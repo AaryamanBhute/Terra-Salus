@@ -16,6 +16,7 @@ html{
 	margin-top: 14vh;
 	margin-bottom: 5vh;
 	animation: icc 5s linear infinite forwards;
+	border-bottom: 3px solid black;
 }
 .sticky{
     position: -webkit-sticky;
@@ -30,6 +31,7 @@ html{
 	align-content: space-around;
 	gap: 20vw;
 	margin-top: 5vh;
+	animation: icc 5s linear infinite forwards;
 }
 .menubar a{
 	color: black;

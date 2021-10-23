@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
+html{
+	font-family: 'Teko', sans-serif;
+	overflow-x: hidden;
+}
+.sticky{
+	margin-top: -1vh;
+    position: -webkit-sticky;
+    position: sticky;
+}
+.menubar{
+	background-color: white;
+	width: 102vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: space-around;
+	gap: 15vw;
+	margin-left: -1vw;
+	margin-top: -2vh;
+	top: 0;
+	animation: icc 5s linear infinite forwards;
+	box-shadow:	 rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+	z-index: 10;
+}
+.menubar a{
+	color: black;
+	font-size: 2vw;
+	text-decoration: none;
+	padding: 0vw;
+	opacity: 0;
+	animation: simplefadein 0.5s 0.5s linear forwards;
+	transition: 1s box-shadow;
+}
+#whyneeded{
+	margin-top: 0vh;
+	margin-bottom: 1vh;
+	opacity: 0;
+	animation: simplefadein 0.5s 1s linear forwards;
+}
+#aboutus{
+	margin-top: 5vh;
+	margin-bottom: 0vh;
+	opacity: 0;
+	animation: simplefadein 0.5s 1s linear forwards;
+}
+.colorshift{
+	animation: icc 5s linear infinite forwards;
+}
+#aboutimg{
+	opacity: 0;
+	animation: simplefadein 0.5s 1s linear forwards;
+}
+#abouttext{
+	opacity: 0;
+	animation: simplefadein 0.5s 1s linear forwards;
+}
+img.logo{
+	opacity: 1;
+	padding: 0;
+	height: 9vh;
+	margin-top: 2vh;
+	transition: 0.1s ease-in-out;
+}
+img.logo:hover{
+	transform: scale(1.1,1.1);
+    transition: 0.1s ease-in-out;
+}
+.entry {
+    padding: 1.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5vh;
+}
+.description{
+	align-self: flex-start;
+    display: table-row;
+    width: 40vw;
+    line-height: 140%;
+    padding: 1px;
+    margin: 0px;
+    font-size: 2.5vh;
+    text-align: center;
+}
+.contactbar{
+	padding: 0vw;
+	justify-content: center;
+	display: flex;
+	gap: 2vw;
+}
+.contactimg{
+	width: 3vw;
+	transition: 0.1s ease-in-out;
+	padding: 0.5vw;
+}
+.contactimg:hover{
+	transform: scale(1.5, 1.5);
+	transition: 0.1s ease-in-out;
+	border-bottom: 2px solid blue;
+}
+.descriptionC{
+	align-self: flex-start;
+    display: table-row;
+    width: 40vw;
+    height: 50vh;
+    line-height: 120%;
+    padding: 1px;
+    margin: 1px;
+    font-size: 2.5vh;
+    text-align: center;
+}
+.description p{
+	font-family: 'PT Sans Narrow', sans-serif;
+}
+.descriptionC p{
+	font-family: 'PT Sans Narrow', sans-serif;
+}
+p.bodyheader{
+    color: black;
+    font-size: 2vw;
+    text-align: center;
+}
+.fade-in{
+    opacity: 0;
+    transition: opacity 250ms ease-in;
+}
+
+.fade-in.appear{
+    opacity: 1;
+}
+img.general{
+	align-self: flex-start;
+	height: 45vh;
+	transition: 0.1s ease-in-out;
+	padding: .5vw;
+}
+img.general:hover{
+	transform: scale(1.1);
+	margin-bottom: -.1vw;
+	transition: 0.1s ease-in-out;
+	border-bottom: 2px solid black;
+}
+button{
+    border: hidden;
+    background-color: white;
+    padding-top: 3vh;
+}
+
+
+
+@keyframes icc{
+	0%{
+		filter: hue-rotate(1deg);
+	}
+	100%{
+		filter: hue-rotate(360deg);
+	}
+}
+@keyframes simplefadein{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+@keyframes logofadein{
+    0% {
+      opacity: 0;
+      transform: translateX(-5vw);
+   }
+   100% {
+      opacity: 1;
+      transform: translateX(0vw);
+   }
+}
+.blink {
+	opacity: 0;
+	animation: joinfadein 3s 2s forwards;
+}
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+}
+
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: mediumturquoise;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+@keyframes joinfadein{
+   	0% {
+      opacity: 0;
+      transform: translateX(-5vw);
+   	}
+   	100% {
+      opacity: 1;
+      transform: translateX(0vw);
+   	}
+}
+@keyframes blinker2 {
+	from{
+		opacity: 1;
+	}
+	to{
+		opacity: .7;
+	}
+}
+}
