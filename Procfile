@@ -1,1 +1,1 @@
-web: gunicorn hackduke.wsgi --log-file -
+web: gunicorn hackduke.wsgi
