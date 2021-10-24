@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="{% static 'website/subpage.css' %}">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{% static 'website/icon.ico' %}" />
+	<title>Terra Salus - {{item_data.name}}</title>
+</head>
+<body>
+    <div class="menubar sticky">
+        <a href="/"><img src="https://i.ibb.co/7gFjvpF/terrasaluslogo.png" class="logo"></a>
+        <a href="/about" class="hover-underline-animation">About</a>
+        <a href="/contact" class="hover-underline-animation">Contact</a>
+        <a href="/future" class="hover-underline-animation">Future</a>
+        <a href="/use" class="hover-underline-animation">Use</a>
+    </div>
+    <div id="about">
+        <p class="bodyheader fade-in" id="aboutus"><strong><span>&#8212;</span> Your Image: <span>&#8212;</span></strong></p>
+    </div>
+    <div class="entry">
+        <img src="/media/images/med.png" class="yourimage">
+    </div>
+    <div class="entry">
+        <p id="classification">Classification: <span style="color:blue;text-transform: capitalize;"><strong>{{item_data.name}}</strong></span></p>
+    </div>
+    <div id="needed" style="margin-top:0vh">
+        <p class="bodyheader fade-in" id="whyneeded"><strong><span>&#8212;</span> <span style="color:blue;text-transform: capitalize;">{{item_data.name}}'s</span> <span style="color:red;">Carbon Cost</span> <span>&#8212;</span></strong></p>
+    </div>
+    <div class="entry" style="margin-top:-5vh">
+        <h1>{{item_data.amount}} <span style="color:red;">CO<sup>2</sup> Per Individual Object (in kg CO<sup>2</sup> equivalent)</span></h1>
+    </div>
+    <div class="entry" style="margin-top:-10vh;">
+    	<p style="font-size: 2vw;">This carbon cost is including the cost for <span style="color:blue">Production</span>, <span style="color:blue">Usage</span>, and <span style="color:blue">Disposal</span> of the {{item_data.name}}</p>
+    </div>
+    <div id="about">
+        <p class="bodyheader fade-in">Solutions: Better <span style="color:blue">{{item_data.name}}</span> Alternatives and Suggestions</p>
+    </div>
+    <div class="entry" style="margin-top:-6vh">
+    	<p><span style="color:green; font-size: 2vw;">{{item_data.solutions}}</span></p>
+    </div>
+    <script src="{% static 'website/fadein.js' %}"></script>
+</body>
+</html>

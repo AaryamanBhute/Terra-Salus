@@ -33,6 +33,10 @@ html{
 	animation: simplefadein 0.5s 0.5s linear forwards;
 	transition: 1s box-shadow;
 }
+#earthpic{
+	opacity: 0;
+	animation: simplefadein 0.5s 1s linear forwards;
+}
 #whyneeded{
 	margin-top: 0vh;
 	margin-bottom: 1vh;
@@ -49,6 +53,32 @@ html{
 	animation: icc 5s linear infinite forwards;
 }
 #aboutimg{
+	opacity: 0;
+	animation: simplefadein 0.5s 1s linear forwards;
+}
+.flexcontainer{
+	display: flex;
+	justify-content: center;
+	margin-top: -10vh;
+}
+#form{
+	display: block;
+	width:10em;
+	text-align:right;
+	display:inline-block;
+	margin-right:1em;
+}
+.yourimage{
+	width: 60vw;
+	opacity: 0;
+	border: 2px solid blue;
+	animation: simplefadein 0.5s 1s linear forwards;
+}
+#classification{
+	font-size: 2vw;
+}
+form{
+	text-align: center;
 	opacity: 0;
 	animation: simplefadein 0.5s 1s linear forwards;
 }
@@ -147,9 +177,17 @@ button{
     background-color: white;
     padding-top: 3vh;
 }
-
-
-
+.submitbutton{
+	padding: 1vh;
+	border: 2px solid green;
+	border-radius: 3px;
+	background-color: white;
+	color: black;
+}
+.submitbutton:hover{
+	background-color: green;
+	color: white;
+}
 @keyframes icc{
 	0%{
 		filter: hue-rotate(1deg);

@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="{% static 'website/subpage.css' %}">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{% static 'website/icon.ico' %}" />
+	<title>Terra Salus</title>
+</head>
+<body>
+    <div class="menubar sticky">
+        <a href="/"><img src="https://i.ibb.co/7gFjvpF/terrasaluslogo.png" class="logo"></a>
+        <a href="/about" class="hover-underline-animation">About</a>
+        <a href="/contact" class="hover-underline-animation">Contact</a>
+        <a href="/future" class="hover-underline-animation">Future</a>
+        <a href="/use" class="hover-underline-animation">Use</a>
+    </div>
+    <div id="about">
+        <p class="bodyheader fade-in" id="aboutus"><strong><span>&#8212;</span> What Is The Future Of Terra Salus? <span>&#8212;</span></strong></p>
+    </div>
+    <div class="entry">
+        <div class="description fade-in" id="abouttext">
+            <p>Currently, our database is vast and contains most common items and appliances. In order to provide more complete information, we are looking to create a crowdsourcing system</p>
+            <p><strong style="color: blue;">The implementation will be the following:</strong></p>
+            <p>If the user uploads an image with an object not in the current database, they will be prompted with the option to input information regarding that item that they researched independantly. </p>
+            <p>Since this system is prone to misinformation, this information will be validated by webscraping for the inputted information to ensure there is a credible site that validates the information.</p>
+            <p>Additionally, every time a user is given results from an image, they are also given the option to flag the results as incorrect. Flagged responses will than be looked over by the Terra Salus team to either be removed or accepted.</p>
+        </div>
+        <a href="https://crowdsourcingweek.com/what-is-crowdsourcing/"><img src="https://i.ibb.co/t2yRSV1/crowdsourcing.jpg" class="general fade-in" id="aboutimg"></a>
+    </div>
+
+    <div id="needed">
+        <p class="bodyheader fade-in" id="whyneeded" style="margin-top:3vh;"><strong><span>&#8212;</span> From Website To Mobile App <span>&#8212;</span></strong></p>
+    </div>
+    <div class="entry" style="padding-bottom: 5vh;">
+        <a href="/future"><img src="https://i.ibb.co/P6BfVnt/app.jpg" class="general fade-in" id="whyimg"></a>
+        <div class="description fade-in" id="whytext">
+            <p>Although being able to upload an image to a website is convenient, being able to use the live feed from your phone is even easier</p>
+            <p>We are already planning the development of a mobile app to be launched on the <strong><span style="color:blue;">Google Play Store</span></strong> and the <strong><span style="color:blue">App Store</span></strong> for accessibility from most smartphones and other devices</p>
+            <p><strong>Crowdsourcing Updates:</strong> with the upcoming implementation of crowdsourcing we expect a massive growth of attention and web traffic to arrive at <strong><span style="color:green">Terra Salus</span></strong>. To prepare, we are in the process of upgrading our server capacity and starting to recruit team members for the moderation process</p>
+            <p><strong><span style="color:green">We Need To Act! , We Need To Speak Out! , We Need To Terra Salus!</span></strong></p>
+        </div>
+    </div>
+
+    <script src="{% static 'website/fadein.js' %}"></script>
+</body>
+</html>

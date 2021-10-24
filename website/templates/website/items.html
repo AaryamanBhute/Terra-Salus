@@ -1,0 +1,9 @@
+{% extends 'admin/base_site.html' %}
+
+{% block content %}
+    <!-- /admin/names/spliter/ is your url in admin panel (you can change it whatever you want) -->
+    <form action="/admin/names/spliter/" method="post" >{% csrf_token %}
+        {{ form }}
+        <input type="submit" value="'Send'" >
+    </form>
+{% endblock %}

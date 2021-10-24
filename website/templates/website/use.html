@@ -1,0 +1,51 @@
+{% load static %}
+<!DOCTYPE html>
+<html style="overflow-y: hidden;">
+<head>
+	<link rel="stylesheet" href="{% static 'website/subpage.css' %}">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{% static 'website/icon.ico' %}" />
+	<title>Terra Salus</title>
+</head>
+<body>
+    <div class="menubar sticky">
+        <a href="/"><img src="https://i.ibb.co/7gFjvpF/terrasaluslogo.png" class="logo"></a>
+        <a href="/about" class="hover-underline-animation">About</a>
+        <a href="/contact" class="hover-underline-animation">Contact</a>
+        <a href="/future" class="hover-underline-animation">Future</a>
+        <a href="/use" class="hover-underline-animation">Use</a>
+    </div>
+    <div id="about">
+        <p class="bodyheader fade-in" id="aboutus"><strong><span>&#8212;</span> Use Terra Salus! <span>&#8212;</span></strong></p>
+    </div>
+    <div class="entry">
+        <div class="description fade-in" id="abouttext">
+            <p>Terra Salus identifies objects in your image and provides you information regarding their carbon footprints and other environmental data</p>
+            <p><strong>Upload Your Image Below to Begin!</strong></p>
+        </div>
+    </div>
+
+
+
+    <div class="flexcontainer">
+        <div id="form" class="entry fade-in">
+            {% block content %}
+                <form method="post" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <button type="submit" class="submitbutton" style="">Upload</button>
+                </form>
+            {% endblock %}
+        </div>
+    </div>
+    <div class="entry" id="earthpic">
+        <img src="https://i.ibb.co/g637M0T/Earth-Moon-4k-Ri-Earth-From-Moon-Hd-Hd-Wallpapers-jpg.jpg" style="height: 50vh;">
+    </div>
+
+
+
+    <script src="{% static 'website/fadein.js' %}"></script>
+</body>
+</html>

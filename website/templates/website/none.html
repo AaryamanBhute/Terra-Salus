@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="{% static 'website/subpage.css' %}">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{% static 'website/icon.ico' %}" />
+	<title>Terra Salus</title>
+</head>
+<body>
+    <div class="menubar sticky">
+        <a href="/"><img src="https://i.ibb.co/7gFjvpF/terrasaluslogo.png" class="logo"></a>
+        <a href="/about" class="hover-underline-animation">About</a>
+        <a href="/contact" class="hover-underline-animation">Contact</a>
+        <a href="/future" class="hover-underline-animation">Future</a>
+        <a href="/use" class="hover-underline-animation">Use</a>
+    </div>
+    <div id="about" style="margin-top:10vh">
+        <p class="bodyheader fade-in" id="aboutus"><strong><span>&#8212;</span> Uh-Oh! No Item Found! <span>&#8212;</span></strong></p>
+    </div>
+    <div class="entry" style="margin-top:4vh">
+        <div class="description fade-in" id="abouttext">
+            <p>Unfortunately the image you entered <span style="color:red"><strong>did not have a recognizable image</strong></span> or was not in our database.</p>
+            <p><strong style="color: blue;">We are currently working towards expanding our database!</strong></p>
+            <p><strong>Please feel free to try again with a clearer picture of the item of with a different item</strong></p>
+            <p>We expect to have a lot more items to be recognizable once we take <span style="color:green"><strong>Terra Salus</strong></span> to a crowd sourcing system! Please be patient until we grow our database and add more features</p>
+            <p>We are expecting the implementation of a text search information system within the next few weeks! <span style="color:blue">Get Excited!</span></p>
+        </div>
+        <a href="/"><img src="https://i.ibb.co/1rWLT8X/info.jpg" class="general fade-in" id="aboutimg"></a>
+    </div>
+
+    <script src="{% static 'website/fadein.js' %}"></script>
+</body>
+</html> 
