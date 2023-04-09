@@ -1,3 +1,4 @@
+![image](https://user-images.githubusercontent.com/35084309/230799881-4f735680-558b-4c28-a7b4-40bf27b6e2c0.png)
 # Terra Salus
 Terra Salus was a project submitted to HackDuke 2021 - Check it out in more detail here: https://devpost.com/software/terra-salus
 # What is Terra Salus?
